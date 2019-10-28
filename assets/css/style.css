@@ -1,0 +1,37 @@
+.parallax {
+  /* The image used */
+  background-image: url('../img/parallax.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wabutton{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.backTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: inline-block;  
+  /* padding: 2em; */
+  margin: 1em;
+  color: rgb(57, 142, 253);
+}
+.backTop:hover {
+  cursor: pointer;
+}
+
+/* FAB */
