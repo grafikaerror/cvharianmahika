@@ -68,7 +68,7 @@
 			<!-- End footer Area -->
 			<!-- <a href="#"><img src="<?= base_url('assets/')?>img/whatsapp.png" class="wabutton"></a> -->
 			<!-- Floating Action Button like Google Material -->
-			<div class="backTop"><i title="Back To Top" class="fas fa-angle-double-up fa-4x"></i></div>
+			<div class="backTop"><i title="Back To Top" class="fas fa-angle-up fa-4x"></i></div>
 		</body>
 			<script src="<?= base_url('assets/')?>js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

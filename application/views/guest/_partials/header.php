@@ -37,10 +37,10 @@
 			<header id="header" id="home">
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <!-- <a href="index.html"><img src="<?= base_url('assets/')?>img/logo.png" alt="" title="" /></a> -->
-				      </div>
-				      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+				      <!-- <div id="logo">
+				        <a href="index.html">Harian</a>
+				      </div> -->
+					  <a class="navbar-brand" href="#">Navbar</a>
 					  
 				      <nav id="nav-menu-container" class="">
 				        <ul class="nav-menu ">

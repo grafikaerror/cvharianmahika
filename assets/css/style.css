@@ -1,37 +1,246 @@
-.parallax {
-  /* The image used */
-  background-image: url('../img/parallax.jpg');
+/* NEW */
 
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*Navbar*/
+.navbar {
+	position: relative;
+	z-index: 1;
 }
 
-.wabutton{
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 1000;
-  min-width: 100px;
-  max-width: 100px;
+.navbar-brand {
+	font-family: ;
+	font-size: 32px;
+}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+}
+
+/*Jumbroton*/
+.jumbotron {
+	background-image: url(../img/parallax.jpg);
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+	position: absolute;
+	bottom: 0;
+
+}
+
+.jumbotron h1 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1em;
+	margin-top: 20px;
+}
+
+.jumbotron p {
+	padding: 20px 0px;
+}
+
+p {
+	margin-top: 0;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: rgb(77, 77, 77);
+}
+
+.jumbotron .display-4 {
+	color: black;
+	margin-top: 200px;
+	font-weight: 700;
+	line-height: 1em;	
+	font-size: 40px;
+}
+
+.testimonial {
+	margin-top: 100px;
+}
+
+.testimonial h5 {
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.testimonial .figure img {
+	width: 60px;
+	margin: 20px 10px 0;
+	opacity: 0, 6;
+}
+
+.testimonial .figure img.utama {
+	width: 90px;
+	opacity: 1;
+	margin-top: 5px;
+}
+
+.testimonial .figure h5 {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	color: #1C2C5D;
+}
+
+.testimonial .figure p {
+	font-style: 12px;
+	color: #acacac;
+	margin-top: -5px !important;
+}
+
+.testimonial figcaption {
+	text-align: center;
+}
+
+.btn-primary {
+	border-radius: 50px;
+	padding: 15px 30px
+}
+
+
+/*Footer*/
+.footer {
+	margin-top: 100px;
+}
+
+.footer p {
+	color: #acacac;
+	font-size: 18px;
+}
+
+/*utility*/
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+/*Working Space*/
+.workingspace {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.workingspace h3 {
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.workingspace h3 span {
+	font-weight: 500;
+}
+
+.workingspace p {
+	font-size: 18px;
+	color: #acacac;
+	font-weight: 200;
+	margin: 30px 0;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url('../img/parallax.jpg');
+
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wabutton {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 1000;
+	min-width: 100px;
+	max-width: 100px;
 }
 
 .backTop {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  display: inline-block;  
-  /* padding: 2em; */
-  margin: 1em;
-  color: rgb(57, 142, 253);
-}
-.backTop:hover {
-  cursor: pointer;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	display: inline-block;
+	/* padding: 2em; */
+	margin: 1em;
+	color: rgb(57, 142, 253);
 }
 
-/* FAB */
+.backTop:hover {
+	cursor: pointer;
+}
+
+/*Deskop Version*/
+@media (min-width: 992px) {
+
+	.navbar-brand,
+	.nav-link {
+		color: rgb(0, 0, 0) !important;
+		/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);*/
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin-top: -10px;
+		margin: -5px auto auto;
+		padding-bottom: 3px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron {
+		height: 400px;
+		margin-top: 0;
+	}
+
+	.jumbotron .display-4 {
+
+		margin-top: 100px;
+		font-size: 60px;
+	}
+	.workingspace-container {
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+	.workingspace {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.q {
+		text-align: right;
+		padding: 40px;
+	}
+
+	.wr {
+		padding: 40px;
+	}
+
+	.testimonial h5 {
+		font-size: 32px;
+	}
+
+}
