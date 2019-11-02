@@ -19,6 +19,7 @@
   <link href="<?= base_url('assets/') ?>css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="<?= base_url('assets/') ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets/') ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +67,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">List Tampilan:</h6>
             <a class="collapse-item" href="<?= base_url('admin/listTampilanHome') ?>">Home</a>
-            <a class="collapse-item disabled" href="<?= base_url('admin/editTampilanAbout') ?>">About</a>
+            <a class="collapse-item disabled" href="<?= base_url('admin/listTampilanAbout') ?>">About</a>
             <a class="collapse-item" href="#">Artikel</a>
           </div>
         </div>
@@ -106,13 +107,13 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Tambah Data :</h6>
-            <a class="collapse-item" href="#">Artikel</a>
-            <a class="collapse-item" href="<?= base_url('admin/addProduk') ?>">Perumahan</a>
-            <a class="collapse-item" href="<?= base_url('admin/listTipe') ?>">Tipe</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Buat Pengumuman:</h6>
-            <a class="collapse-item" href="#">Pengumuman</a>
+            <a class="collapse-item" href="<?= base_url('admin/addProduk') ?>">Produk</a>
+            <a class="collapse-item" href="#">Konstuksi</a>
+            <a class="collapse-item" href="#">Gallery</a>
             <a class="collapse-item" href="#">Promo</a>
+            <div class="collapse-divider"></div>
+            <!-- <h6 class="collapse-header">Buat Pengumuman:</h6>
+            <a class="collapse-item" href="#">Promo</a> -->
           </div>
         </div>
       </li>
@@ -120,22 +121,22 @@
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="<?= base_url('admin/listProduk') ?>">
-          <i class="fas fa-fw fa-home"></i>
-          <span>List Perumahan</span></a>
+          <i class="fas fa-fw fa-gem"></i>
+          <span>List Produk</span></a>
       </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="<?= base_url('admin/listTipe') ?>">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>List Tipe</span></a>
+          <i class="fas fa-fw fa-home"></i>
+          <span>List Konstruksi</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-comment-dots"></i>
-          <span>List Artikel</span></a>
+          <i class="fas fa-fw fa-images"></i>
+          <span>List Gallery</span></a>
       </li>
 
       <li class="nav-item">

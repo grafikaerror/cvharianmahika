@@ -64,6 +64,14 @@
 
 <!-- Page level custom scripts -->
 <script src="<?= base_url('assets/') ?>js/demo/datatables-demo.js"></script>
+<!-- Text Editor -->
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script>
+  $(function() {
+    //Add text editor
+    $("#descproduk").wysihtml5();
+  });
+</script>
 
 </body>
 

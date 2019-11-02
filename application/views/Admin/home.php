@@ -9,7 +9,7 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Perumahan</div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah Produk</div>
                                 <a class="btn btn-outline-primary my-3" href="<?= base_url('admin/listProduk'); ?>">LIHAT</a>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rumah</div>
                             </div>
@@ -25,7 +25,7 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Jumlah Artikel</div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Jumlah Konstruksi</div>
                                 <a class="btn btn-outline-success my-3" href="<?= base_url('admin/listArtikel'); ?>">LIHAT</a>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Artikel</div>
                             </div>
