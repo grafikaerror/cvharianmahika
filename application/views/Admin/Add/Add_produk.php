@@ -1,7 +1,7 @@
 <div class="container col-md-9">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Tambah Produk</h6>
+            <h6 class="m-0 font-weight-bold text-danger">Tambah Produk</h6>
         </div>
         <div class="col-md-10 mx-auto mt-3 mb-3">
             <form enctype="multipart/form-data" method="post" action="<?= base_url('Admin/addProduk') ?>">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Deskripsi Produk :</label>
-                    <textarea name="desc" class="form-control"></textarea>
+                    <textarea name="desc" class="form-control" id="descproduk" rows="10"></textarea>
                     <?= form_error('desc', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
@@ -28,9 +28,9 @@
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Kategori Produk :</label>
                     <select name="kategori" class="form-control">
-                        <option value="1">Konstruksi</option>
-                        <option value="1">Konstruksi</option>
-                        <option value="1">Konstruksi</option>
+                        <?php foreach ($kategori as $ktgr) : ?>
+                            <option value="<?= $ktgr['id_kategori'] ?>"><?= $ktgr['nama_kategori'] ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div class="form-group">

@@ -65,12 +65,27 @@
 <!-- Page level custom scripts -->
 <script src="<?= base_url('assets/') ?>js/demo/datatables-demo.js"></script>
 <!-- Text Editor -->
-<script src="<?= base_url('assets/') ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="<?= base_url('assets/') ?>summernote-master/dist/summernote.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#descproduk').summernote({
+      heigth: "300px",
+      styleWithSpan: false
+    });
+  });
+</script>
 <script>
   $(function() {
-    //Add text editor
-    $("#descproduk").wysihtml5();
-  });
+    $('#table').DataTable()
+    $('#example2').DataTable({
+      'paging': true,
+      'lengthChange': false,
+      'searching': false,
+      'ordering': true,
+      'info': true,
+      'autoWidth': false
+    })
+  })
 </script>
 
 </body>

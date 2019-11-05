@@ -1,6 +1,7 @@
     <div class="container-fluid">
 
         <?= $this->session->flashdata('pesan_edit'); ?>
+        <?= $this->session->flashdata('sukses_add_kategori'); ?>
 
         <div class="row">
             <!-- Earnings (Monthly) Card Example -->

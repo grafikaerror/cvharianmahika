@@ -5,7 +5,7 @@ class M_produk extends CI_Model
 
     private $_table = 'tb_produk';
 
-    // public $id_produk;
+    public $id_produk;
     public $id_kategori;
     public $id_admin;
     public $nama_produk;
@@ -45,6 +45,26 @@ class M_produk extends CI_Model
         return $this->db->get_where($this->_table, ['id_produk' => $id])->row();
     }
 
+    public function update()
+    {
+        $post =  $this->input->post();
+        $this->id_produk = $post['id'];
+        $this->id_kategori = $post['kategori'];
+        $this->id_admin = $post['admin'];
+        $this->nama_produk = $post['nama'];
+        $this->harga_produk = $post['harga'];
+        $this->desc_produk = $post['desc'];
+        $this->api_produk = 'null';
+
+        if (!empty($_FILES["img"]["name"])) {
+            $this->img_produk = $this->_uploadImage();
+        } else {
+            $this->img_produk = $post["old_image"];
+        }
+        // $this->description = $post["description"];
+        $this->db->update($this->_table, $this, array('id_produk' => $post['id']));
+    }
+
     public function save()
     {
         $post = $this->input->post();
@@ -74,5 +94,20 @@ class M_produk extends CI_Model
 
         print_r($this->upload->display_errors());
         // return "default.jpg";
+    }
+
+    public function delete($id)
+    {
+        $this->_deleteimage($id);
+        return $this->db->delete($this->_table, array('id_produk' => $id));
+    }
+
+    public function _deleteimage($id)
+    {
+        $produk = $this->getById($id);
+        if ($produk->img_produk != 'default.jpg') {
+            $filename = explode(".", $produk->img_produk)[0];
+            return array_map('unlink', glob(FCPATH . "upload/product/$filename"));
+        }
     }
 }

@@ -19,7 +19,7 @@
   <link href="<?= base_url('assets/') ?>css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="<?= base_url('assets/') ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-  <link href="<?= base_url('assets/') ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets/') ?>summernote-master/dist/summernote.css" rel="stylesheet">
 
 </head>
 
@@ -110,6 +110,7 @@
             <a class="collapse-item" href="<?= base_url('admin/addProduk') ?>">Produk</a>
             <a class="collapse-item" href="#">Konstuksi</a>
             <a class="collapse-item" href="#">Gallery</a>
+            <a class="collapse-item" href="<?= base_url('admin/addKategori') ?>">Kategori</a>
             <a class="collapse-item" href="#">Promo</a>
             <div class="collapse-divider"></div>
             <!-- <h6 class="collapse-header">Buat Pengumuman:</h6>
@@ -123,6 +124,12 @@
         <a class="nav-link" href="<?= base_url('admin/listProduk') ?>">
           <i class="fas fa-fw fa-gem"></i>
           <span>List Produk</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('admin/listKategori') ?>">
+          <i class="fas fa-th-large"></i>
+          <span>List Kategori</span></a>
       </li>
 
       <!-- Nav Item - Charts -->
